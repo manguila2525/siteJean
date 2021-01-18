@@ -4,6 +4,10 @@ const desplegar = document.querySelector("#desplegar")
 const container = document.querySelector(".modal")
 const menu = document.querySelector(".menu")
 const list = document.querySelector(".list");
+
+const botonCloseModal = document.querySelector("#close-modal")
+const modal = document.querySelector("#modal")
+
 nosotros.addEventListener("mouseover", () => {
     showNosotros.style.display = "block"
 })
@@ -15,6 +19,10 @@ let showMenu = true;
 
 this.addEventListener("load", () => {
     container.style.display = "grid"
+})
+
+botonCloseModal.addEventListener("click", () => {
+    modal.style.display = "none";
 })
 // desplegar.addEventListener("click", () => {
 //   if(showMenu){

@@ -149,6 +149,27 @@ grid-template-columns: auto auto;
     width: 50%;
 }
 
+.info-fixed {
+    background: #48ca58;
+    color: #fff;
+    position: fixed;
+    top: 668px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 14px;
+    text-align: center;
+    border-radius: 13%;
+    width: 16%;
+}
+.info-fixed h1 {
+    background-color: #fff;
+    color: #48ca58;
+    margin: auto;
+    padding: 12px 0;
+    width: 101%;
+    border-radius: 51%;
+}
+
 @media screen and (max-width :999px){
     .item-text {
         display: none;
