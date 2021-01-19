@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background: #0F4C8B;
 }
 
 .nav {
@@ -60,10 +61,14 @@ a {
 
 
 .nav-fixed{
-    position: sticky;
+    z-index: 3000;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background: #fff;
+    position: sticky;
+    width: 100%;
+    top: -1px;
     box-shadow:5px 3px 5px #555;
 }
 .logo{
@@ -132,7 +137,7 @@ grid-template-columns: auto auto;
     margin: 10% auto;
     position: relative;
     display: grid; 
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
   }
   .modal-contenido img {
       width: 100%;
@@ -150,6 +155,7 @@ grid-template-columns: auto auto;
 }
 
 .info-fixed {
+    cursor: pointer;
     background: #48ca58;
     color: #fff;
     position: fixed;
@@ -170,6 +176,46 @@ grid-template-columns: auto auto;
     border-radius: 51%;
 }
 
+.section-one, .section-two {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px 100px;
+    height: 500px;
+    background: linear-gradient(to bottom, #69b4d8, rgb(95, 226, 238));
+    text-align: center;
+    transition: all 1s;
+}
+.section-one:hover {
+    border-top-right-radius:100%;
+}
+.title-section-one{
+    background-color: #021e45;
+    padding: 10px 0;
+    color: white;
+    position: absolute;
+    width: 100%;
+    order: 0;
+    z-index: -1;
+}
+.right-section{
+    background: #0F4C8B;
+    position: absolute;
+    width: 44.7%;
+    margin-right: 100px;
+    right: 0;
+    order: 10;
+}
+.description-section-one{
+    position: absolute;
+    order: 20;
+    padding: 50px;
+    top: 100px;
+    width: 50%;
+   right: 0;
+   left: 20%;
+   border-radius: 50%;
+    background: #fff;
+}
 @media screen and (max-width :999px){
     .item-text {
         display: none;
