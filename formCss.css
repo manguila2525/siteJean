@@ -1,0 +1,139 @@
+*{
+  font-family: 'Roboto Mono', monospace;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #222;
+}
+
+.form-login{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 500px;
+  border: 1px outset  rgb(25, 236, 243);
+  align-items: center;
+  margin: auto;
+  margin-top: 5%;
+  background:#111;
+  padding: 50px ;
+}
+
+.left-section{
+  flex-grow: 2;
+ text-align: center;
+}
+
+.right-section {
+  flex-grow: 1;
+  text-align: center;
+  background: #222;
+}
+
+.right-section img{
+  width: 300px;
+}
+.container-img{
+  background-color: #888;
+ padding: 100px 0;
+ border-radius: 100%;
+}
+
+.form_container-input, .form_container-input input{
+  width: 90%;
+  margin: 5px 0;
+  padding: 15px 0;
+}
+
+.form_container-input input{
+  border: none;
+  border-bottom: 1px solid rgb(25, 236, 243);
+  background: transparent;
+  color: white;
+}
+.form_container-input input::placeholder{
+  color:rgb(25, 236, 243); 
+}
+
+.form_container-input input:focus{
+  outline: none;
+  background:linear-gradient(to top,#333, #777);
+  color: white;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: rgb(25, 236, 243);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px outset #777;
+  transition: all .5s;
+  font-weight: 700;
+  text-shadow: 5px 5px 5px black;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(163, 63, 194);
+}
+
+input[type="submit"]:hover ~ input {
+  border-color:rgb(163, 63, 194) ;
+}
+
+@media screen and (max-width:1400px){
+  .form-login{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 500px;
+    border: 1px outset  rgb(25, 236, 243);
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+    background:#111;
+    padding: 50px ;
+  }
+}
+@media screen and (max-width:950px){
+  .container-img {
+    background-color: #888;
+    padding: 15px 0;
+    border-radius: 100%;
+}.right-section img {
+  width: 267px;
+}
+}
+
+@media screen and (max-width:628px){
+  .form_container-input, .form_container-input input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 0;
+}
+.left-section {
+  flex-grow: 4;
+  text-align: center;
+}
+.right-section {
+  flex-grow: 1;
+  text-align: center;
+  background: #222;
+  position: absolute;
+  top: 35px;
+  right: 47px;
+}
+.right-section img {
+  width: 105px;
+}
+.form-login {
+  display: flex;
+  flex-wrap: wrap;
+  width: 83%;
+  height: 87vh;
+ margin-top: 0;
+ margin: 2% auto;
+}
+}
